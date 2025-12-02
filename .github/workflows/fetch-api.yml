@@ -1,0 +1,45 @@
+name: Fetch API Data
+
+on:
+  schedule:
+    # Runs every 1 minute
+    - cron: '* * * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch API data
+        run: |
+          # Fetch data from a sample API (JSONPlaceholder - a free fake API for testing)
+          # Replace this URL with your desired API endpoint
+          if curl -sf "https://jsonplaceholder.typicode.com/todos/1" -o data/api-result.json; then
+            # Add timestamp to track when the data was fetched
+            echo "Fetched at: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > data/last-fetch.txt
+          else
+            echo "Failed to fetch API data"
+            exit 1
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add data/
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update API data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          fi
