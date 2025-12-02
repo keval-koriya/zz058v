@@ -53,9 +53,9 @@ jobs:
                       if isinstance(data, list):
                           for item in data:
                               if 'id' in item:
-                                  global_channels[item['id']] = item
+                                  global_channels[str(item['id'])] = item
                       elif isinstance(data, dict):
-                          global_channels = data
+                          global_channels = {str(k): v for k, v in data.items()}
                   except json.JSONDecodeError:
                       global_channels = {}
 
@@ -68,7 +68,7 @@ jobs:
                   except json.JSONDecodeError:
                       processed_files = set()
 
-          # Find all channel files
+          # Find all channel files - sorted by filename (oldest first, so newest overwrites)
           channel_files = sorted(glob.glob(f"{CHANNELS_DIR}/realtime_channels_*.json"))
           
           new_count = 0
@@ -94,11 +94,12 @@ jobs:
                       
                       for item in items:
                           if 'id' in item:
-                              item_id = item['id']
+                              item_id = str(item['id'])
                               if item_id not in global_channels:
                                   new_count += 1
                               else:
                                   updated_count += 1
+                              # New content always overrides old content
                               global_channels[item_id] = item
               except (json.JSONDecodeError, Exception) as e:
                   print(f"Error processing {filename}: {e}")
@@ -116,7 +117,7 @@ jobs:
           print(f"\n=== Summary ===")
           print(f"Files processed this run: {len(new_files_processed)}")
           print(f"New channels added: {new_count}")
-          print(f"Channels updated: {updated_count}")
+          print(f"Channels updated (overwritten): {updated_count}")
           print(f"Total unique channels: {len(global_channels)}")
           EOF
 
@@ -126,4 +127,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/global_channels.json data/.processed_files.json
           git commit -m "Update global channels - $(date +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
