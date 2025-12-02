@@ -3,7 +3,7 @@ name: Fetch Realtime Channels
 on:
   schedule:
     # Run every hour
-    - cron: '0 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
     # Allow manual trigger
 
@@ -68,4 +68,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/channels/
           git commit -m "Add realtime channels data - $(date +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
