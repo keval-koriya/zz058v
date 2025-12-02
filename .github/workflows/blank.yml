@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     
+    permissions:
+      contents: write
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -84,49 +87,44 @@ jobs:
 
             console.log(`Found ${channels.length} channels to process`);
 
-            const batch = db.batch();
-            let insertCount = 0;
-            let updateCount = 0;
+            // Firestore batch has a limit of 500 operations, so we chunk the data
+            const BATCH_SIZE = 500;
+            let totalCount = 0;
+            const fetchedAt = new Date().toISOString();
 
-            for (const channel of channels) {
-              // Use channel ID as document ID for insert/update logic
-              const channelId = channel.id || channel._id || channel.channelId;
-              
-              if (!channelId) {
-                console.warn('Channel without ID found, skipping:', channel);
-                continue;
+            // Process in chunks for bulk operations
+            for (let i = 0; i < channels.length; i += BATCH_SIZE) {
+              const chunk = channels.slice(i, i + BATCH_SIZE);
+              const batch = db.batch();
+
+              for (const channel of chunk) {
+                const channelId = channel.id || channel._id || channel.channelId;
+                
+                if (!channelId) {
+                  console.warn('Channel without ID found, skipping');
+                  continue;
+                }
+
+                const docRef = db.collection('channels').doc(String(channelId));
+                
+                // Use set with merge to handle both insert and update in one operation
+                const channelData = {
+                  ...channel,
+                  lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+                  fetchedAt: fetchedAt,
+                };
+
+                batch.set(docRef, channelData, { merge: true });
+                totalCount++;
               }
 
-              const docRef = db.collection('channels').doc(String(channelId));
-              const docSnapshot = await docRef.get();
-
-              const channelData = {
-                ...channel,
-                lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
-                fetchedAt: new Date().toISOString(),
-              };
-
-              if (docSnapshot.exists) {
-                // Update existing document
-                batch.update(docRef, channelData);
-                updateCount++;
-                console.log(`Updating channel: ${channelId}`);
-              } else {
-                // Insert new document
-                channelData.createdAt = admin.firestore.FieldValue.serverTimestamp();
-                batch.set(docRef, channelData);
-                insertCount++;
-                console.log(`Inserting channel: ${channelId}`);
-              }
+              await batch.commit();
+              console.log(`Committed batch ${Math.floor(i / BATCH_SIZE) + 1} (${chunk.length} documents)`);
             }
-
-            // Commit the batch
-            await batch.commit();
             
             console.log(`\nSummary:`);
-            console.log(`- Inserted: ${insertCount} channels`);
-            console.log(`- Updated: ${updateCount} channels`);
-            console.log(`- Total processed: ${insertCount + updateCount} channels`);
+            console.log(`- Total processed: ${totalCount} channels`);
+            console.log(`- Batches committed: ${Math.ceil(channels.length / BATCH_SIZE)}`);
           }
 
           processChannelsData()
@@ -139,3 +137,21 @@ jobs:
               process.exit(1);
             });
           EOF
+
+      - name: Delete processed files
+        run: |
+          if [ -d "data/channels" ] && [ "$(ls -A data/channels/*.json 2>/dev/null)" ]; then
+            rm -f data/channels/*.json
+            echo "Deleted all processed JSON files"
+          else
+            echo "No JSON files to delete"
+          fi
+
+      - name: Commit and push cleanup
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/channels/
+          git commit -m "Remove processed channel files - $(date +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push
