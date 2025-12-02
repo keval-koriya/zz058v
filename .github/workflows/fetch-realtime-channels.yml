@@ -1,0 +1,71 @@
+name: Fetch Realtime Channels
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  fetch-channels:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create data directory
+        run: mkdir -p data/channels
+
+      - name: Fetch realtime channels
+        env:
+          VAR_API_URL: ${{ vars.VAR_API_URL }}
+          VAR_REFERER: ${{ vars.VAR_REFERER }}
+          VAR_API_TOKEN: ${{ vars.VAR_API_TOKEN }}
+        run: |
+          DATETIME=$(date +"%Y%m%d_%H%M%S")
+          FILENAME="data/channels/realtime_channels_${DATETIME}.json"
+          
+          curl "$VAR_API_URL" \
+            -H 'Accept: */*' \
+            -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' \
+            -H 'Cache-Control: no-cache' \
+            -H 'Connection: keep-alive' \
+            -H "Origin: $VAR_REFERER" \
+            -H 'Pragma: no-cache' \
+            -H "Referer: $VAR_REFERER/" \
+            -H 'Sec-Fetch-Dest: empty' \
+            -H 'Sec-Fetch-Mode: cors' \
+            -H 'Sec-Fetch-Site: same-site' \
+            -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+            -H "authorization: Bearer $VAR_API_TOKEN" \
+            -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+            -H 'sec-ch-ua-mobile: ?0' \
+            -H 'sec-ch-ua-platform: "Linux"' \
+            -H 'x-app-name: nexlev-niche-finder' \
+            -H 'x-app-version: 0.1.0' \
+            -H 'x-browser: Chrome' \
+            -H 'x-browser-version: 142.0' \
+            -H 'x-device-id: 7825b2f5970e907006ab4bfc637abb3e' \
+            -H 'x-pixel-ratio: 1' \
+            -H 'x-platform: Linux' \
+            -H "x-request-id: getNewestChannels-$(date +%s)-$(head /dev/urandom | tr -dc 'a-z0-9' | head -c 10)" \
+            -H 'x-screen-resolution: 1920x1080' \
+            -H 'x-timezone: Asia/Calcutta' \
+            -H 'x-user-id: 6929cdb273adec38c8ca0bca' \
+            -H 'x-viewport-size: 1920x966' \
+            -o "$FILENAME"
+          
+          echo "FILENAME=$FILENAME" >> $GITHUB_ENV
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/channels/
+          git commit -m "Add realtime channels data - $(date +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
+          git push
