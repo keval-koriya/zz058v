@@ -1,0 +1,35 @@
+name: Sync Realtime Channels
+
+on:
+  schedule:
+    # Run every 15 minutes
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  sync-channels:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install firebase-admin
+
+      - name: Sync channels to Firebase
+        env:
+          VAR_API_URL: ${{ vars.VAR_API_URL }}
+          VAR_REFERER: ${{ vars.VAR_REFERER }}
+          VAR_API_TOKEN: ${{ vars.VAR_API_TOKEN }}
+          FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+          FIREBASE_CLIENT_EMAIL: ${{ vars.FIREBASE_CLIENT_EMAIL }}
+          FIREBASE_PRIVATE_KEY: ${{ vars.FIREBASE_PRIVATE_KEY }}
+          FIREBASE_DATABASE_URL: ${{ vars.FIREBASE_DATABASE_URL }}
+        run: node sync-channels.js
