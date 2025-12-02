@@ -1,0 +1,129 @@
+name: Merge Channels to Global File
+
+on:
+  workflow_run:
+    workflows: ["Fetch Realtime Channels"]
+    types:
+      - completed
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  merge-channels:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Create directories
+        run: |
+          mkdir -p data/channels
+          mkdir -p data
+
+      - name: Merge channels to global file
+        run: |
+          python3 << 'EOF'
+          import json
+          import os
+          import glob
+
+          GLOBAL_FILE = "data/global_channels.json"
+          PROCESSED_FILE = "data/.processed_files.json"
+          CHANNELS_DIR = "data/channels"
+
+          # Load global channels (keyed by ID)
+          global_channels = {}
+          if os.path.exists(GLOBAL_FILE):
+              with open(GLOBAL_FILE, 'r') as f:
+                  try:
+                      data = json.load(f)
+                      # Convert list to dict keyed by ID
+                      if isinstance(data, list):
+                          for item in data:
+                              if 'id' in item:
+                                  global_channels[item['id']] = item
+                      elif isinstance(data, dict):
+                          global_channels = data
+                  except json.JSONDecodeError:
+                      global_channels = {}
+
+          # Load processed files list
+          processed_files = set()
+          if os.path.exists(PROCESSED_FILE):
+              with open(PROCESSED_FILE, 'r') as f:
+                  try:
+                      processed_files = set(json.load(f))
+                  except json.JSONDecodeError:
+                      processed_files = set()
+
+          # Find all channel files
+          channel_files = sorted(glob.glob(f"{CHANNELS_DIR}/realtime_channels_*.json"))
+          
+          new_count = 0
+          updated_count = 0
+          new_files_processed = []
+
+          for filepath in channel_files:
+              filename = os.path.basename(filepath)
+              
+              # Skip already processed files
+              if filename in processed_files:
+                  continue
+              
+              print(f"Processing: {filename}")
+              new_files_processed.append(filename)
+              
+              try:
+                  with open(filepath, 'r') as f:
+                      data = json.load(f)
+                      
+                      # Handle both list and dict formats
+                      items = data if isinstance(data, list) else data.get('data', []) if isinstance(data, dict) else []
+                      
+                      for item in items:
+                          if 'id' in item:
+                              item_id = item['id']
+                              if item_id not in global_channels:
+                                  new_count += 1
+                              else:
+                                  updated_count += 1
+                              global_channels[item_id] = item
+              except (json.JSONDecodeError, Exception) as e:
+                  print(f"Error processing {filename}: {e}")
+                  continue
+
+          # Save global channels as dict keyed by ID
+          with open(GLOBAL_FILE, 'w') as f:
+              json.dump(global_channels, f, indent=2)
+
+          # Update processed files list
+          processed_files.update(new_files_processed)
+          with open(PROCESSED_FILE, 'w') as f:
+              json.dump(sorted(list(processed_files)), f, indent=2)
+
+          print(f"\n=== Summary ===")
+          print(f"Files processed this run: {len(new_files_processed)}")
+          print(f"New channels added: {new_count}")
+          print(f"Channels updated: {updated_count}")
+          print(f"Total unique channels: {len(global_channels)}")
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/global_channels.json data/.processed_files.json
+          git commit -m "Update global channels - $(date +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
+          git push
