@@ -67,3 +67,26 @@ export function formatDate(dateString: string): string {
     day: 'numeric',
   });
 }
+
+/**
+ * Format days into a human-readable age (days, months, years)
+ */
+export function formatAge(days: number): string {
+  if (days >= 365) {
+    const years = Math.floor(days / 365);
+    const remainingMonths = Math.floor((days % 365) / 30);
+    if (remainingMonths > 0) {
+      return `${years}y ${remainingMonths}m`;
+    }
+    return `${years}y`;
+  }
+  if (days >= 30) {
+    const months = Math.floor(days / 30);
+    const remainingDays = days % 30;
+    if (remainingDays > 0) {
+      return `${months}m ${remainingDays}d`;
+    }
+    return `${months}m`;
+  }
+  return `${days}d`;
+}

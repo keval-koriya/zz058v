@@ -7,7 +7,7 @@ import {
 } from '@tanstack/react-table';
 import type { Channel } from '../types/channel';
 import type { SortField, SortDirection } from '../lib/firebase';
-import { formatNumber, formatCurrency, formatDuration } from '../lib/utils';
+import { formatNumber, formatCurrency, formatDuration, formatAge } from '../lib/utils';
 import {
   ChevronUp,
   ChevronDown,
@@ -181,8 +181,8 @@ export function ChannelsTable({
       }),
       columnHelper.accessor('daysSinceStart', {
         header: 'Age',
-        size: 55,
-        cell: (info) => `${info.getValue()}d`,
+        size: 75,
+        cell: (info) => formatAge(info.getValue()),
       }),
       columnHelper.accessor('outlierScore', {
         header: 'Outlier',
@@ -307,17 +307,21 @@ export function ChannelsTable({
           <tbody className="divide-y divide-gray-100">
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id} className="hover:bg-gray-50">
-                {row.getVisibleCells().map((cell) => (
-                  <td
-                    key={cell.id}
-                    style={{ width: cell.column.getSize() }}
-                    className="px-4 py-2.5 text-gray-700"
-                  >
-                    <div className="truncate">
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </div>
-                  </td>
-                ))}
+                {row.getVisibleCells().map((cell) => {
+                  // Only truncate the title/channel column
+                  const shouldTruncate = cell.column.id === 'title';
+                  return (
+                    <td
+                      key={cell.id}
+                      style={{ width: cell.column.getSize() }}
+                      className="px-4 py-2.5 text-gray-700"
+                    >
+                      <div className={shouldTruncate ? 'truncate' : 'whitespace-nowrap'}>
+                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      </div>
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
