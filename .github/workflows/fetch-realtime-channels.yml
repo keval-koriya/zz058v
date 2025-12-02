@@ -29,6 +29,7 @@ jobs:
         run: |
           DATETIME=$(date +"%Y%m%d_%H%M%S")
           FILENAME="data/channels/realtime_channels_${DATETIME}.json"
+          TEMP_FILE="data/channels/temp_response.json"
           
           curl "$VAR_API_URL" \
             -H 'Accept: */*' \
@@ -58,7 +59,11 @@ jobs:
             -H 'x-timezone: Asia/Calcutta' \
             -H 'x-user-id: 6929cdb273adec38c8ca0bca' \
             -H 'x-viewport-size: 1920x966' \
-            -o "$FILENAME"
+            -o "$TEMP_FILE"
+          
+          # Remove lastUploadedVideos from each entry and save to final file
+          jq 'if type == "array" then map(del(.lastUploadedVideos)) elif .data then .data |= map(del(.lastUploadedVideos)) elif .channels then .channels |= map(del(.lastUploadedVideos)) else . end' "$TEMP_FILE" > "$FILENAME"
+          rm -f "$TEMP_FILE"
           
           echo "FILENAME=$FILENAME" >> $GITHUB_ENV
 
