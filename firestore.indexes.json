@@ -1,0 +1,3741 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isFaceless",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hasShorts",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "quality",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "subscribers",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalViews",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rpm",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numOfUploads",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgViewPerVideo",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "daysSinceStart",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "channels",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isMonetized",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgMonthlyRevenue",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "outlierScore",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
