@@ -1,0 +1,157 @@
+name: Push Data to Firebase Storage
+
+on:
+  workflow_run:
+    workflows: ["Fetch Realtime Channels"]
+    types:
+      - completed
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  push-to-firebase:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Firebase Admin SDK
+        run: npm install firebase-admin
+
+      - name: Push data to Firebase
+        env:
+          FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+          FIREBASE_CLIENT_EMAIL: ${{ vars.FIREBASE_CLIENT_EMAIL }}
+          FIREBASE_PRIVATE_KEY: ${{ vars.FIREBASE_PRIVATE_KEY }}
+          FIREBASE_DATABASE_URL: ${{ vars.FIREBASE_DATABASE_URL }}
+        run: |
+          node << 'EOF'
+          const admin = require('firebase-admin');
+          const fs = require('fs');
+          const path = require('path');
+
+          // Initialize Firebase Admin SDK
+          admin.initializeApp({
+            credential: admin.credential.cert({
+              projectId: process.env.FIREBASE_PROJECT_ID,
+              clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+              privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+            }),
+            databaseURL: process.env.FIREBASE_DATABASE_URL,
+          });
+
+          const db = admin.firestore();
+
+          async function processChannelsData() {
+            const channelsDir = 'data/channels';
+            
+            if (!fs.existsSync(channelsDir)) {
+              console.log('No channels directory found');
+              process.exit(0);
+            }
+
+            // Get the most recent JSON file
+            const files = fs.readdirSync(channelsDir)
+              .filter(f => f.endsWith('.json'))
+              .sort()
+              .reverse();
+
+            if (files.length === 0) {
+              console.log('No JSON files found');
+              process.exit(0);
+            }
+
+            const latestFile = path.join(channelsDir, files[0]);
+            console.log(`Processing file: ${latestFile}`);
+
+            const rawData = fs.readFileSync(latestFile, 'utf8');
+            const data = JSON.parse(rawData);
+
+            // Handle both array and object with data property
+            const channels = Array.isArray(data) ? data : (data.data || data.channels || []);
+
+            if (!Array.isArray(channels)) {
+              console.log('No valid channels array found in data');
+              process.exit(0);
+            }
+
+            console.log(`Found ${channels.length} channels to process`);
+
+            // Firestore batch has a limit of 500 operations, so we chunk the data
+            const BATCH_SIZE = 500;
+            let totalCount = 0;
+            const fetchedAt = new Date().toISOString();
+
+            // Process in chunks for bulk operations
+            for (let i = 0; i < channels.length; i += BATCH_SIZE) {
+              const chunk = channels.slice(i, i + BATCH_SIZE);
+              const batch = db.batch();
+
+              for (const channel of chunk) {
+                const channelId = channel.id || channel._id || channel.channelId;
+                
+                if (!channelId) {
+                  console.warn('Channel without ID found, skipping');
+                  continue;
+                }
+
+                const docRef = db.collection('channels').doc(String(channelId));
+                
+                // Use set with merge to handle both insert and update in one operation
+                const channelData = {
+                  ...channel,
+                  lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+                  fetchedAt: fetchedAt,
+                };
+
+                batch.set(docRef, channelData, { merge: true });
+                totalCount++;
+              }
+
+              await batch.commit();
+              console.log(`Committed batch ${Math.floor(i / BATCH_SIZE) + 1} (${chunk.length} documents)`);
+            }
+            
+            console.log(`\nSummary:`);
+            console.log(`- Total processed: ${totalCount} channels`);
+            console.log(`- Batches committed: ${Math.ceil(channels.length / BATCH_SIZE)}`);
+          }
+
+          processChannelsData()
+            .then(() => {
+              console.log('Data push completed successfully');
+              process.exit(0);
+            })
+            .catch((error) => {
+              console.error('Error pushing data to Firebase:', error);
+              process.exit(1);
+            });
+          EOF
+
+      - name: Delete processed files
+        run: |
+          if [ -d "data/channels" ] && [ "$(ls -A data/channels/*.json 2>/dev/null)" ]; then
+            rm -f data/channels/*.json
+            echo "Deleted all processed JSON files"
+          else
+            echo "No JSON files to delete"
+          fi
+
+      - name: Commit and push cleanup
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/channels/
+          git commit -m "Remove processed channel files - $(date +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push
