@@ -1,0 +1,11 @@
+{
+  "name": "channel-sync",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync": "node sync-channels.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}
